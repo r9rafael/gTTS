@@ -111,3 +111,20 @@
 #     print("Tabuada do número", numerador + 1)
 #     for multiplicador in range (10):
 #         print ((numerador + 1)*(multiplicador + 1))
+
+tabela=[]
+contador = 0
+for linha in range(3):
+    linha = []
+    for coluna in range (3):
+        coluna = []
+        for z in range (3):
+            contador += 1
+            coluna.append(contador)
+        linha.append(coluna)
+    tabela.append(linha)
+
+print(tabela)
+for linha in tabela:
+    for coluna in linha:
+        print(coluna)
